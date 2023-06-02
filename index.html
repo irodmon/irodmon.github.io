@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simulador Voto Elecciones</title>
+    <link rel="icon" type="image/png" href="elecciones.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <section class="container mt-5 text-center">
+      <div>
+        <img src="img/elecciones.png" class="img-fluid" alt="" width="55">
+        <h1>Simulador de Voto</h1>
+        <h3>Elecciones Generales España 2023 <img src="img/espana.png" class="img-fluid" alt="" width="30"></h3>
+        <p class="lead">Con este Simulador de Voto podrás conocer cual es el partido que mejor se adapta a tu perfil según el Modelo de Inteligencia Articial ChatGPT.</p>
+        <p>*Esto es solo un juego, informate antes de votar.</p>
+      </div>
+    </section>
+    
+    <section class="container mt-5 mb-5">
+      <div class="border shadow px-5 py-5">
+      
+        <input type="email" class="form-control mb-3" placeholder="email@email.com">
+        
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control mb-3" placeholder="Nombre">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control mb-3" placeholder="Apellidos">
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-6">
+            <select class="form-select mb-3" aria-label="Default select example">
+              <option selected>Comunidad Autónoma</option>
+              <option>Andalucía</option>
+              <option>Aragón</option>
+              <option>Islas Baleares</option>
+              <option>Canarias</option>
+              <option>Cantabria</option>
+              <option>Castilla-La Mancha</option>
+              <option>Castilla y León</option>
+              <option>Cataluña</option>
+              <option>Comunidad de Madrid</option>
+              <option>Navarra</option>
+              <option>Comunidad Valenciana</option>
+              <option>Extremadura</option>
+              <option>Galicia</option>
+              <option>País Vasco</option>
+              <option>Principado de Asturias</option>
+              <option>Murcia</option>
+              <option>La Rioja</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control mb-3" placeholder="Código Postal">
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-4">
+            <input type="text" class="form-control mb-3" placeholder="Día de Nacimiento">
+          </div>
+          <div class="col-md-4">
+            <input type="text" class="form-control mb-3" placeholder="Mes de Nacimiento">
+          </div>
+          <div class="col-md-4">
+            <input type="text" class="form-control mb-3" placeholder="Año de Nacimiento">
+          </div>
+        </div>
+        
+        <select class="form-select mb-3" aria-label="Default select example">
+           <option selected>Genero</option>
+           <option>Masculino</option>
+           <option>Femenino</option>
+           <option>Otro</option>
+        </select>
+        
+        <div class="row">
+          <div class="col-md-6">
+            <select class="form-select mb-3" aria-label="Default select example">
+              <option selected>Eres independiente económicamente</option>
+              <option>SI</option>
+              <option>NO</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control mb-3" placeholder="Renta Anual Neta">
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-4">
+            <select class="form-select mb-3" aria-label="Default select example">
+              <option selected>Eres propietario de una vivienda</option>
+              <option>SI</option>
+              <option>NO</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <input type="text" class="form-control mb-3" placeholder="Nº de viviendas que posees">
+          </div>
+          <div class="col-md-4">
+            <select class="form-select mb-3" aria-label="Default select example">
+              <option selected>Vives de alquiler</option>
+              <option>SI</option>
+              <option>NO</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-4">
+            <select class="form-select mb-3" aria-label="Default select example">
+              <option selected>Estado Civil</option>
+              <option>Soltero</option>
+              <option>Casado</option>
+              <option>Divorciado</option>
+              <option>Viudo</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <select class="form-select mb-3" aria-label="Default select example">
+              <option selected>Tienes hij@s</option>
+              <option>SI</option>
+              <option>NO</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <select class="form-select mb-3" aria-label="Default select example">
+              <option selected>Nº de hij@s</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>+3</option>
+            </select>
+          </div>
+        </div>
+        
+        <p>Selecciona las opciones que más te preocupan:</p>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Acceso a una vivienda asequible
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Sistema Sanitario
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Reducción de Impuestos
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Sistema de pensiones
+              </label>
+            </div>
+           </div> 
+           <div class="col-md-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Condiciones laborales
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Acceso a prestamos y Tipos de Interes
+              </label>
+            </div>
+           
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Presupuestos del Estado
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Medidas Medioambientales
+              </label>
+            </div>
+           </div> 
+           <div class="col-md-4"> 
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Servicios tercera edad y residencias
+              </label>
+            </div> 
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Ayudas Sociales
+              </label>
+            </div> 
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Seguridad Ciudadana 
+              </label>
+            </div> 
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Extrangería e Inmigración 
+              </label>
+            </div> 
+          </div>
+        </div>
+        
+        <div class="d-grid gap-2 d-md-block mt-5 text-end">
+          <button class="btn btn-outline-secondary" type="button">Cancelar</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Simular</button>
+        </div>
+      </div>
+    </section>
+     
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" 
+    aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>El partido que mejor se adapta a tu perfil es:</p>
+            <div class="text-center mt-5 mb-3">
+              <img src="img/partido1.png" class="img-fluid" alt="" width="90">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin Modal -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
